@@ -139,6 +139,9 @@ open class LineChartDataSet: LineRadarChartDataSet, LineChartDataSetProtocol
     /// Line cap type, default is CGLineCap.Butt
     open var lineCapType = CGLineCap.butt
     
+    /// `true` if drawing negative value below circle, `false` ifnot
+    open var negativeValueLabelBelow: Bool = false
+    
     /// formatter for customizing the position of the fill-line
     private var _fillFormatter: FillFormatter = DefaultFillFormatter()
     
